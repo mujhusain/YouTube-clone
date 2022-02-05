@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="img/logo.PNG" class="logo" alt="">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><img src="img/search.PNG" alt=""></button>
+        </div>
+        <div class="user-options">
+            <img src="img/video.PNG" class="icon" alt="">
+            <img src="img/grid.PNG" class="icon" alt="">
+            <img src="img/bell.PNG" class="icon" alt="">
+            <div class="user-dp">
+                <img src="img/user.jpg" class="icon" alt="">
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- videos -->
+    <div id="vid_page">
+        <div class="play-video">
+            <iframe class="play-iframe" width="727" height="409" src="#" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            
+
+        </div>
+        <div class="suggestion-video">suggestions videos</div>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
+
+<script>
+let iframe=document.getElementsByTagName("iframe");
+let videoId=localStorage.getItem("videId");
+
+console.log(videoId);
+iframe[0].src=`https://www.youtube.com/embed/${videoId}`;
+
+
+</script>
+
+
+
+
