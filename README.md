@@ -1,4 +1,7 @@
 # YouTube-clone
+
+<img src="https://github.com/mujhusain/YouTube-clone/blob/main/img/Youtube-clone.png?raw=true"/>
+
 Tried to clone landing page of YouTube with using actual YouTube API. User can login and search videos.
 
 To experience: # username: abcd
